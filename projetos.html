@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Projetos · Dev.JC</title>
+    <meta
+      name="description"
+      content="Dev.JC — portfólio de JC, desenvolvedor front-end a caminho do back-end e do full stack."
+    />
+
+    <link rel="icon" type="image/x-icon" href="assets/logoJC.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      // Aplica o tema salvo antes de desenhar a página (evita piscar)
+      try {
+        var t = localStorage.getItem("devjc-tema");
+        if (t === "dark" || t === "light")
+          document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="site">
+      <header class="top">
+        <div class="wrap">
+          <a class="logo" href="index.html">Dev<span>.</span>JC</a>
+          <div class="nav-right">
+            <nav aria-label="Seções">
+              <ul>
+                <li class="hide-xs"><a href="index.html">Início</a></li>
+                <li>
+                  <a href="projetos.html" aria-current="page">Projetos</a>
+                </li>
+                <li><a href="index.html#contato">Contato</a></li>
+              </ul>
+            </nav>
+            <button
+              class="icon-btn"
+              id="theme-toggle"
+              type="button"
+              aria-label="Alternar tema claro e escuro"
+            >
+              <svg
+                class="i-moon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+              </svg>
+              <svg
+                class="i-sun"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="4.5" />
+                <path
+                  d="M12 1.5v2.5M12 20v2.5M1.5 12H4M20 12h2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero proj-hero">
+          <div class="wrap">
+            <p class="label"><a href="index.html">Dev.JC</a> / projetos</p>
+            <h1>Meus Projetos</h1>
+            <p class="lead">
+              Uma coleção de projetos desenvolvidos ao longo da minha jornada
+              como desenvolvedor, explorando diferentes tecnologias, desafios e
+              soluções.
+            </p>
+            <div class="meter big" aria-label="Progresso nos 11 níveis">
+              <a
+                class="m c102"
+                data-n="1"
+                href="projetos.html#nivel-1"
+                title="Nível 1: Básico"
+                >1</a
+              ><a
+                class="m c202"
+                data-n="2"
+                href="projetos.html#nivel-2"
+                title="Nível 2: Layout responsivo"
+                >2</a
+              ><a
+                class="m c202"
+                data-n="3"
+                href="projetos.html#nivel-3"
+                title="Nível 3: JavaScript no navegador"
+                >3</a
+              ><a
+                class="m c202"
+                data-n="4"
+                href="projetos.html#nivel-4"
+                title="Nível 4: Consumo de API"
+                >4</a
+              ><a
+                class="m c202"
+                data-n="5"
+                href="projetos.html#nivel-5"
+                title="Nível 5: Framework front-end"
+                >5</a
+              ><a
+                class="m c202"
+                data-n="6"
+                href="projetos.html#nivel-6"
+                title="Nível 6: Primeiro back-end"
+                >6</a
+              ><a
+                class="m c202"
+                data-n="7"
+                href="projetos.html#nivel-7"
+                title="Nível 7: Banco de dados e login"
+                >7</a
+              ><a
+                class="m c202"
+                data-n="8"
+                href="projetos.html#nivel-8"
+                title="Nível 8: Full stack"
+                >8</a
+              ><a
+                class="m c202"
+                data-n="9"
+                href="projetos.html#nivel-9"
+                title="Nível 9: Aplicação em produção"
+                >9</a
+              ><a
+                class="m c202"
+                data-n="10"
+                href="projetos.html#nivel-10"
+                title="Nível 10: SaaS full stack"
+                >10</a
+              ><a
+                class="m c202"
+                data-n="11"
+                href="projetos.html#nivel-11"
+                title="Nível 11: Em breve"
+                >11</a
+              >
+            </div>
+            <p class="legend">
+              <span class="code c200"><span class="dot"></span>Concluído</span
+              ><span class="code c102"
+                ><span class="dot"></span>Em andamento</span
+              ><span class="code c202"><span class="dot"></span>Planejado</span>
+            </p>
+          </div>
+        </section>
+
+        <section class="block">
+          <div class="wrap levels">
+            <!--
+        NÍVEIS: cada <article class="nivel"> é um nível, e cada <div class="proj"> dentro dele é um projeto.
+        Status do projeto (troque o selo):
+          <span class="code c202">202 Planejado</span>
+          <span class="code c102">102 Em andamento</span>
+          <span class="code c202">202 Planejado</span>
+        Para pôr links no projeto, adicione depois das tags:
+          <div class="links"><a href="https://github.com/..." target="_blank" rel="noopener">Código</a><a href="https://..." target="_blank" rel="noopener">Ver online</a></div>
+        Para escolher quais aparecem na página inicial, use class="proj destaque".
+        (Se nenhum do nível tiver "destaque", a página inicial mostra todos.)
+        A cor dos quadradinhos 1 a 11 fica na barra no topo desta página e na index.html.
+      -->
+            <article class="nivel" id="nivel-1">
+              <div class="n">01</div>
+              <div class="nivel-body">
+                <div class="nivel-head">
+                  <h2>HTML + CSS</h2>
+                  <p>Estrutura, layout e responsividade · 5 projetos</p>
+                </div>
+                <div class="nivel-cards">
+                  <div class="proj">
+                    <div class="meta">
+                      <span class="label">#01</span
+                      ><span class="code c200">200 Concluído</span>
+                    </div>
+                    <h3>Profile Card</h3>
+                    <p>Cartão de perfil com foto, bio e link.</p>
+                    <div class="tags"><span>HTML</span><span>CSS</span></div>
+
+                    <div class="links">
+                      <a
+                        href="https://github.com/josecarlos006/ProfileCard"
+                        target="_blank"
+                        rel="noopener"
+                        >Código</a
+                      >
+                      <a
+                        href="https://josecarlos006.github.io/ProfileCard/"
+                        target="_blank"
+                        rel="noopener"
+                        >Ver online</a
+                      >
+                    </div>
+                  </div>
+                  <div class="proj">
+                    <div class="meta">
+                      <span class="label">#02</span
+                      ><span class="code c200">200 Concluído</span>
+                    </div>
+                    <h3>Product Card</h3>
+                    <p>Card de produto com imagem, preço e botão de compra.</p>
+                    <div class="tags"><span>HTML</span><span>CSS</span></div>
+
+                    <div class="links">
+                      <a
+                        href="https://github.com/josecarlos006/ProductCard"
+                        target="_blank"
+                        rel="noopener"
+                        >Código</a
+                      >
+                      <a
+                        href="https://josecarlos006.github.io/ProductCard/"
+                        target="_blank"
+                        rel="noopener"
+                        >Ver online</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="nivel" id="nivel-2">
+              <div class="n">2</div>
+              <div class="nivel-body">
+                <div class="nivel-head">
+                  <h2>Em breve</h2>
+                  <p>· 0 projetos</p>
+                </div>
+                <div class="nivel-cards">
+                  <p class="empty">
+                    Ainda não tem projetos neste nível. Volte em breve!
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="nivel" id="nivel-3">
+              <div class="n">3</div>
+              <div class="nivel-body">
+                <div class="nivel-head">
+                  <h2>Em breve</h2>
+                  <p>· 0 projetos</p>
+                </div>
+                <div class="nivel-cards">
+                  <p class="empty">
+                    Ainda não tem projetos neste nível. Volte em breve!
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="nivel" id="nivel-4">
+              <div class="n">4</div>
+              <div class="nivel-body">
+                <div class="nivel-head">
+                  <h2>Em breve</h2>
+                  <p>· 0 projetos</p>
+                </div>
+                <div class="nivel-cards">
+                  <p class="empty">
+                    Ainda não tem projetos neste nível. Volte em breve!
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="nivel" id="nivel-5">
+              <div class="n">5</div>
+              <div class="nivel-body">
+                <div class="nivel-head">
+                  <h2>Em breve</h2>
+                  <p>· 0 projetos</p>
+                </div>
+                <div class="nivel-cards">
+                  <p class="empty">
+                    Ainda não tem projetos neste nível. Volte em breve!
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="nivel" id="nivel-6">
+              <div class="n">6</div>
+              <div class="nivel-body">
+                <div class="nivel-head">
+                  <h2>Em breve</h2>
+                  <p>· 0 projetos</p>
+                </div>
+                <div class="nivel-cards">
+                  <p class="empty">
+                    Ainda não tem projetos neste nível. Volte em breve!
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="nivel" id="nivel-7">
+              <div class="n">7</div>
+              <div class="nivel-body">
+                <div class="nivel-head">
+                  <h2>Em breve</h2>
+                  <p>· 0 projetos</p>
+                </div>
+                <div class="nivel-cards">
+                  <p class="empty">
+                    Ainda não tem projetos neste nível. Volte em breve!
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="nivel" id="nivel-8">
+              <div class="n">8</div>
+              <div class="nivel-body">
+                <div class="nivel-head">
+                  <h2>Em breve</h2>
+                  <p>· 0 projetos</p>
+                </div>
+                <div class="nivel-cards">
+                  <p class="empty">
+                    Ainda não tem projetos neste nível. Volte em breve!
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="nivel" id="nivel-9">
+              <div class="n">9</div>
+              <div class="nivel-body">
+                <div class="nivel-head">
+                  <h2>Em breve</h2>
+                  <p>· 0 projetos</p>
+                </div>
+                <div class="nivel-cards">
+                  <p class="empty">
+                    Ainda não tem projetos neste nível. Volte em breve!
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="nivel" id="nivel-10">
+              <div class="n">10</div>
+              <div class="nivel-body">
+                <div class="nivel-head">
+                  <h2>Em breve</h2>
+                  <p>· 0 projetos</p>
+                </div>
+                <div class="nivel-cards">
+                  <p class="empty">
+                    Ainda não tem projetos neste nível. Volte em breve!
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="nivel" id="nivel-11">
+              <div class="n">11</div>
+              <div class="nivel-body">
+                <div class="nivel-head">
+                  <h2>Em breve</h2>
+                  <p>· 0 projetos</p>
+                </div>
+                <div class="nivel-cards">
+                  <p class="empty">
+                    Ainda não tem projetos neste nível. Volte em breve!
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="wrap">
+          <span>© <span id="ano">2026</span> Dev.JC</span>
+          <span class="mono">status: 102 Processing</span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

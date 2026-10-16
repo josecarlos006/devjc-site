@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Dev.JC</title>
+    <meta
+      name="description"
+      content="Dev.JC — portfólio de JC, desenvolvedor front-end a caminho do back-end e do full stack."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      // Aplica o tema salvo antes de desenhar a página (evita piscar)
+      try {
+        var t = localStorage.getItem("devjc-tema");
+        if (t === "dark" || t === "light")
+          document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="site">
+      <header class="top">
+        <div class="wrap">
+          <a class="logo" href="#inicio">Dev<span>.</span>JC</a>
+          <div class="nav-right">
+            <nav aria-label="Seções">
+              <ul>
+                <li class="hide-sm"><a href="#sobre">Sobre</a></li>
+                <li class="hide-xs"><a href="#rota">Rota</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+              </ul>
+            </nav>
+            <button
+              class="icon-btn"
+              id="theme-toggle"
+              type="button"
+              aria-label="Alternar tema claro e escuro"
+            >
+              <svg
+                class="i-moon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+              </svg>
+              <svg
+                class="i-sun"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="4.5" />
+                <path
+                  d="M12 1.5v2.5M12 20v2.5M1.5 12H4M20 12h2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main id="inicio">
+        <section class="hero">
+          <div class="wrap">
+            <div>
+              <p class="label">Desenvolvedor júnior · Brasil</p>
+              <h1>
+                Eu construo a interface. Agora estou aprendendo
+                <em>o que roda por trás dela.</em>
+              </h1>
+              <p class="lead">
+                Sou o JC, dev front-end estudando o back-end, com o full
+                stack como próximo destino.
+              </p>
+              <div class="cta">
+                <a class="btn primary" href="projetos.html">Ver projetos</a>
+                <a class="btn" href="#contato">Falar comigo</a>
+              </div>
+            </div>
+
+            <div
+              class="stack"
+              aria-label="Minha trajetória como camadas de uma aplicação"
+            >
+              <div class="req"><b>GET</b> /dev.jc/carreira</div>
+              <div class="layer">
+                <h3>Front-end</h3>
+                <span class="code c200"><span class="dot"></span>200 OK</span>
+                <span class="sub"
+                  >HTML, CSS, JavaScript, React. Já entrego interfaces.</span
+                >
+              </div>
+              <div class="layer">
+                <h3>Back-end</h3>
+                <span class="code c102"
+                  ><span class="dot"></span>102 Processing</span
+                >
+                <span class="sub"
+                  >APIs, banco de dados, autenticação. Estudando agora.</span
+                >
+              </div>
+              <div class="layer">
+                <h3>Full stack</h3>
+                <span class="code c202"
+                  ><span class="dot"></span>202 Accepted</span
+                >
+                <span class="sub"
+                  >Pedido aceito. Próxima etapa da jornada.</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" id="sobre">
+          <div class="wrap about">
+            <p class="label">Sobre</p>
+            <div class="text">
+              <p>
+                Comecei pelo front-end porque gosto de ver o resultado na tela:
+                um layout que se ajusta ao celular, um botão que responde, uma
+                página que carrega rápido. Com o tempo, quis entender de onde
+                vêm os dados que eu exibo.
+              </p>
+              <p>
+                Hoje estou estudando back-end: criando APIs, modelando bancos de
+                dados e aprendendo como uma aplicação funciona de ponta a ponta.
+                O objetivo é me tornar um desenvolvedor full stack que entende o
+                produto inteiro.
+              </p>
+              <div class="facts">
+                <span class="fact">Foco atual: back-end</span>
+                <span class="fact">Aberto a estágio e vaga júnior</span>
+                <span class="fact">Português nativo</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" id="rota">
+          <div class="wrap">
+            <div class="head">
+              <p class="label">Rota</p>
+              <div>
+                <h2>De onde vim e para onde vou</h2>
+                <p>
+                  Minha trajetória como desenvolvedor é como uma rota de
+                  requisições HTTP: comecei com o front-end, estou estudando o
+                  back-end e meu próximo destino é o full stack.
+                </p>
+              </div>
+            </div>
+            <div class="route">
+              <div class="step">
+                <span class="code c200"><span class="dot"></span>200 OK</span>
+                <h3>Front-end</h3>
+                <p>Base consolidada em interfaces responsivas e componentes.</p>
+                <ul>
+                  <li>Layouts com Flexbox e Grid</li>
+                  <li>Componentes em React</li>
+                  <li>Consumo de APIs com fetch</li>
+                </ul>
+              </div>
+              <div class="step now">
+                <span class="code c102"
+                  ><span class="dot"></span>102 Processing</span
+                >
+                <h3>Back-end</h3>
+                <p>Onde estou agora. Construindo o lado do servidor.</p>
+                <ul>
+                  <li>APIs REST com Node.js</li>
+                  <li>SQL e modelagem de dados</li>
+                  <li>Autenticação e segurança</li>
+                </ul>
+              </div>
+              <div class="step">
+                <span class="code c202"
+                  ><span class="dot"></span>202 Accepted</span
+                >
+                <h3>Full stack</h3>
+                <p>O destino: projetos completos, do banco à tela.</p>
+                <ul>
+                  <li>Aplicações ponta a ponta</li>
+                  <li>Deploy e infraestrutura</li>
+                  <li>Testes automatizados</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" id="stack">
+          <div class="wrap">
+            <div class="head">
+              <p class="label">Stack</p>
+              <div><h2>Ferramentas</h2></div>
+            </div>
+            <div class="skills">
+              <div>
+                <h3>
+                  <span class="code c200"><span class="dot"></span></span>Uso no
+                  dia a dia
+                </h3>
+                <div class="chips">
+                  <span class="chip strong">HTML</span
+                  ><span class="chip strong">CSS</span
+                  ><span class="chip strong">JavaScript</span
+                  ><span class="chip strong">React</span
+                  ><span class="chip strong">Git</span
+                  ><span class="chip strong">Figma</span>
+                </div>
+              </div>
+              <div>
+                <h3>
+                  <span class="code c102"><span class="dot"></span></span
+                  >Estudando
+                </h3>
+                <div class="chips">
+                  <span class="chip">Node.js</span
+                  ><span class="chip">Express</span><span class="chip">SQL</span
+                  ><span class="chip">PostgreSQL</span
+                  ><span class="chip">TypeScript</span>
+                </div>
+              </div>
+              <div>
+                <h3>
+                  <span class="code c202"><span class="dot"></span></span
+                  >Próximos passos
+                </h3>
+                <div class="chips">
+                  <span class="chip dashed">Docker</span
+                  ><span class="chip dashed">Next.js</span
+                  ><span class="chip dashed">Testes</span
+                  ><span class="chip dashed">Cloud</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" id="projetos">
+          <div class="wrap">
+            <div class="head">
+              <p class="label">Projetos</p>
+              <div>
+                <h2>O que já construí</h2>
+                <p>
+                  Projetos de estudo e desafios, do front-end ao back-end. Cada
+                  nível tem um conjunto de projetos que mostram o que aprendi.
+                </p>
+              </div>
+            </div>
+            <div class="teaser">
+              <div class="meter" aria-label="Progresso nos 11 níveis">
+                <a
+                  class="m c102"
+                  data-n="1"
+                  href="projetos.html#nivel-1"
+                  title="Nível 1: Básico"
+                  >1</a
+                ><a
+                  class="m c202"
+                  data-n="2"
+                  href="projetos.html#nivel-2"
+                  title="Nível 2: Layout responsivo"
+                  >2</a
+                ><a
+                  class="m c202"
+                  data-n="3"
+                  href="projetos.html#nivel-3"
+                  title="Nível 3: JavaScript no navegador"
+                  >3</a
+                ><a
+                  class="m c202"
+                  data-n="4"
+                  href="projetos.html#nivel-4"
+                  title="Nível 4: Consumo de API"
+                  >4</a
+                ><a
+                  class="m c202"
+                  data-n="5"
+                  href="projetos.html#nivel-5"
+                  title="Nível 5: Framework front-end"
+                  >5</a
+                ><a
+                  class="m c202"
+                  data-n="6"
+                  href="projetos.html#nivel-6"
+                  title="Nível 6: Primeiro back-end"
+                  >6</a
+                ><a
+                  class="m c202"
+                  data-n="7"
+                  href="projetos.html#nivel-7"
+                  title="Nível 7: Banco de dados e login"
+                  >7</a
+                ><a
+                  class="m c202"
+                  data-n="8"
+                  href="projetos.html#nivel-8"
+                  title="Nível 8: Full stack"
+                  >8</a
+                ><a
+                  class="m c202"
+                  data-n="9"
+                  href="projetos.html#nivel-9"
+                  title="Nível 9: Aplicação em produção"
+                  >9</a
+                ><a
+                  class="m c202"
+                  data-n="10"
+                  href="projetos.html#nivel-10"
+                  title="Nível 10: SaaS full stack"
+                  >10</a
+                ><a
+                  class="m c202"
+                  data-n="11"
+                  href="projetos.html#nivel-11"
+                  title="Nível 11: Em breve"
+                  >11</a
+                >
+              </div>
+              <p class="hint">
+                Clique num número para ver os projetos daquele nível.
+              </p>
+              <div
+                class="nivel-painel"
+                id="nivel-painel"
+                aria-live="polite"
+              ></div>
+              <div class="teaser-row">
+                <a class="btn primary" href="projetos.html"
+                  >Ver todos os projetos →</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" id="contato">
+          <div class="wrap contact">
+            <div>
+              <p class="label">Contato</p>
+              <h2>Vamos conversar?</h2>
+              <p>
+                Estou aberto a vagas de estágio e júnior, projetos freelance e
+                trocas com outros devs.
+              </p>
+            </div>
+            <div class="channels">
+              <div class="channel">
+                <span class="label">E-mail</span>
+                <span class="val" id="email">devjosecarlos0@gmail.com</span>
+                <button class="copy" type="button" data-copy="email">
+                  Copiar
+                </button>
+              </div>
+              <div class="channel">
+                <span class="label">GitHub</span>
+                <span class="val"
+                  ><a
+                    href="https://github.com/josecarlos006"
+                    target="_blank"
+                    rel="noopener"
+                    >github.com/josecarlos006</a
+                  ></span
+                >
+                <span></span>
+              </div>
+              <div class="channel">
+                <span class="label">LinkedIn</span>
+                <span class="val"
+                  ><a
+                    href="https://www.linkedin.com/in/josecarlos0075"
+                    target="_blank"
+                    rel="noopener"
+                    >linkedin.com/in/josecarlos0075</a
+                  ></span
+                >
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="wrap">
+          <span>© <span id="ano">2026</span> Dev.JC</span>
+          <span class="mono">status: 102 Processing</span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
